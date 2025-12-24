@@ -1,10 +1,8 @@
-#write a program to calculate the power of a number using a for loop
-number = int(input("Enter a number: "))
-power = int(input("Enter the power: "))
+num = int(input("Enter a number: "))
+c=0
 
-result = 1
+while num:
+    c+=1
+    num//=10
 
-for i in range(power):
-    result = result * number
-
-print("Result:", result)
+    print(c)
